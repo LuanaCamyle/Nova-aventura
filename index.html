@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aventura da Mulher-Maravilha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="aventura">
+        <!-- Passo inicial -->
+        <div id="passo-0" class="passo ativo">
+            <img src="img/cenario-passo0.png" alt="Imagem da Mulher-Maravilha">
+            <p>Mulher-Maravilha está patrulhando as ruas de Gotham quando recebe um alerta do radar. Algo está acontecendo no centro da cidade. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="1">Investigar imediatamente</button>
+            <button class="btn-proximo" data-proximo="2">Esperar por reforços da Liga da Justiça</button>
+        </div>
+
+        <!-- Passo 1: Investigar imediatamente -->
+        <div id="passo-1" class="passo">
+            <p>Mulher-Maravilha decide investigar sozinha. Ela chega ao centro de Gotham e vê um enorme monstro ameaçando a cidade. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="3">Atacar o monstro com seu laço da verdade</button>
+            <button class="btn-proximo" data-proximo="4">Tentar dialogar com o monstro</button>
+        </div>
+
+        <!-- Passo 2: Esperar por reforços -->
+        <div id="passo-2" class="passo">
+            <p>Mulher-Maravilha decide esperar pelos reforços da Liga da Justiça. Alguns minutos depois, Superman e Batman chegam para ajudá-la. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="5">Combinar um plano de ataque com Superman e Batman</button>
+            <button class="btn-proximo" data-proximo="6">Atacar com tudo e ir sozinha para a batalha</button>
+        </div>
+
+        <!-- Passo 3: Atacar com o laço -->
+        <div id="passo-3" class="passo">
+            <p>Mulher-Maravilha usa seu laço da verdade para capturar o monstro, mas o monstro revela que está sendo controlado por uma força maior. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="7">Liberar o monstro e investigar quem está por trás disso</button>
+            <button class="btn-proximo" data-proximo="8">Usar o laço para forçar o monstro a revelar mais informações sobre o mestre</button>
+        </div>
+
+        <!-- Passo 4: Tentar dialogar -->
+        <div id="passo-4" class="passo">
+            <p>Mulher-Maravilha tenta dialogar com o monstro e descobre que ele está sendo manipulado por um feitiço. Ela pode tentar ajudar ou se concentrar em outra estratégia.</p>
+            <button class="btn-proximo" data-proximo="7">Liberar o monstro e investigar o feitiço</button>
+            <button class="btn-proximo" data-proximo="9">Usar seu escudo para proteger Gotham enquanto procura o responsável</button>
+        </div>
+
+        <!-- Passo 5: Plano de ataque com Superman e Batman -->
+        <div id="passo-5" class="passo">
+            <p>Mulher-Maravilha, Superman e Batman formulam um plano para atacar o monstro em conjunto. A batalha é difícil, mas ao final eles conseguem derrotá-lo. No entanto, eles descobrem que o monstro era apenas um distração. O que eles fazem?</p>
+            <button class="btn-proximo" data-proximo="10">Procurar o verdadeiro vilão por trás da distração</button>
+            <button class="btn-proximo" data-proximo="11">Ir diretamente atrás do monstro que ainda está fugindo</button>
+        </div>
+
+        <!-- Passo 6: Atacar sozinha -->
+        <div id="passo-6" class="passo">
+            <p>Mulher-Maravilha decide ir sozinha e parte para a batalha. Ela consegue derrotar o monstro, mas descobre que estava sendo manipulado por uma magia poderosa. O que ela faz agora?</p>
+            <button class="btn-proximo" data-proximo="7">Investigar a origem da magia e encontrar quem está controlando o monstro</button>
+            <button class="btn-proximo" data-proximo="9">Procurar pistas no local para descobrir o responsável</button>
+        </div>
+
+        <!-- Passo 7: Liberar o monstro e investigar -->
+        <div id="passo-7" class="passo">
+            <p>Mulher-Maravilha libera o monstro e encontra vestígios de magia em sua aura. Ela segue as pistas e encontra uma caverna secreta onde o vilão está escondido. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="12">Invadir a caverna e enfrentar o vilão sozinha</button>
+            <button class="btn-proximo" data-proximo="13">Chamar reforços para uma batalha mais estratégica</button>
+        </div>
+
+        <!-- Passo 8: Usar o laço para obter mais informações -->
+        <div id="passo-8" class="passo">
+            <p>Mulher-Maravilha usa seu laço da verdade para obter mais informações do monstro, que revela que o responsável por tudo é um vilão chamado Circe, que está em uma ilha distante. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="14">Viajar até a ilha e confrontar Circe</button>
+            <button class="btn-proximo" data-proximo="15">Chamar a Liga da Justiça para ajudar na batalha contra Circe</button>
+        </div>
+
+        <!-- Passo 9: Usar escudo para proteger Gotham -->
+        <div id="passo-9" class="passo">
+            <p>Mulher-Maravilha usa seu escudo para proteger Gotham enquanto investiga a origem do feitiço. Ela descobre que um antigo artefato mágico está causando a manipulação. O que ela faz?</p>
+            <button class="btn-proximo" data-proximo="12">Ir atrás do artefato e destruí-lo</button>
+            <button class="btn-proximo" data-proximo="16">Procurar pela origem da magia e descobrir quem está controlando tudo</button>
+        </div>
+
+        <!-- Passo 10: Procurar o verdadeiro vilão -->
+        <div id="passo-10" class="passo">
+            <img src="img/cenario-passo10-encontram o verdadeiro vilão.png" alt="imagem encontram o verdadeiro vilão">
+            <p>Mulher-Maravilha, Superman e Batman encontram a verdadeira fonte da ameaça: um vilão misterioso que controla o monstro. Eles se preparam para enfrentá-lo.</p>
+            <button class="btn-proximo" data-proximo="17">Enfrentar o vilão juntos em uma batalha épica</button>
+        </div>
+
+        <!-- Passo 11:Ir atrás do monstro fugido -->
+        <div id="passo-11" class="passo">
+            <p>Mulher-Maravilha decide ir atrás do monstro que está fugindo, mas encontra mais inimigos no caminho. Ela decide lutar contra todos.</p>
+            <button class="btn-proximo" data-proximo="17">Lutar até o fim contra os inimigos</button>
+        </div>
+
+        <!-- Passo 12: Invadir a caverna -->
+        <div id="passo-12" class="passo">
+            <p>Mulher-Maravilha invade a caverna, enfrenta vários guardas e, ao final, derrota o vilão que estava por trás da ameaça. A cidade de Gotham é salva.</p>
+        </div>
+
+        <!-- Passo 13: Chamar reforços -->
+        <div id="passo-13" class="passo">
+            <p>Mulher-Maravilha chama reforços e, juntos, enfrentam o vilão que estava por trás da ameaça. Gotham é salva!</p>
+        </div>
+
+        <!-- Passo 14: Viajar até a ilha -->
+        <div id="passo-14" class="passo">
+            <p>Mulher-Maravilha viaja até a ilha onde Circe está escondida. Depois de uma batalha épica, ela derrota a vilã e salva a cidade.</p>
+        </div>
+
+        <!-- Passo 15: Chamar a Liga da Justiça -->
+        <div id="passo-15" class="passo">
+            <p>Mulher-Maravilha chama a Liga da Justiça para enfrentar Circe, que foi derrotada em uma batalha em conjunto. Gotham está a salvo novamente.</p>
+        </div>
+
+        <!-- Passo 16: Procurar pela origem da magia -->
+        <div id="passo-16" class="passo">
+            <p>Mulher-Maravilha descobre que a origem da magia vem de um artefato
+        <!-- Passo 16: Procurar pela origem da magia -->
+        <div id="passo-16" class="passo">
+            <p>Mulher-Maravilha descobre que a origem da magia vem de um artefato antigo escondido em uma cidade perdida. Ela decide ir atrás do artefato para impedir mais danos.</p>
+            <button class="btn-proximo" data-proximo="18">Viajando até a cidade perdida em busca do artefato</button>
+            <button class="btn-proximo" data-proximo="19">Procurar mais pistas em Gotham antes de partir</button>
+        </div>
+
+        <!-- Passo 17: Batalha épica -->
+        <div id="passo-17" class="passo">
+            <p>Mulher-Maravilha e a Liga da Justiça enfrentam o vilão misterioso em uma batalha épica. Após uma luta difícil, eles conseguem derrotá-lo e restabelecer a paz em Gotham.</p>
+            <button class="btn-proximo" data-proximo="20">Voltar para Themyscira para descansar após a missão</button>
+        </div>
+
+        <!-- Passo 18: Viajar até a cidade perdida -->
+        <div id="passo-18" class="passo">
+            <p>Mulher-Maravilha viaja até a cidade perdida, onde encontra o artefato que controla as forças mágicas. Ela destrói o artefato, evitando que mais monstros apareçam. A cidade volta à tranquilidade.</p>
+        </div>
+
+        <!-- Passo 19: Procurar mais pistas em Gotham -->
+        <div id="passo-19" class="passo">
+            <p>Antes de partir, Mulher-Maravilha encontra uma pista crucial em Gotham: um mapa que indica a localização do artefato mágico. Ela decide usar essa informação para sua missão, partindo em busca da cidade perdida.</p>
+        </div>
+
+        <!-- Passo 20: Voltar para Themyscira -->
+        <div id="passo-20" class="passo">
+            <img src="img/cenario-passo20-pós batalha.png" alt="pós batalha e volta para descansar">
+            <p>Após uma missão bem-sucedida, Mulher-Maravilha retorna a Themyscira para descansar. Ela sabe que, se a cidade precisar dela novamente, estará pronta para agir.</p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
